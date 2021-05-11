@@ -40,14 +40,13 @@ fun indices(trait:String):String{ //question3
     }
     return characteristic
 }
-fun strLength(name:Array<String>):List<String> { //question4
-    var names = mutableListOf<String>()
-    //var length=0
-    for (item in name) {
-        if (item.length % 2 == 0) {
-            names.add(item)
+fun strLength(names:Array<String>):List<String> { //question4
+    var listNames = mutableListOf<String>()
+    for (name in names) {
+        if (name.length % 2 == 0) {
+            listNames.add(name)
         }
 
     }
-    return names
+    return listNames
 }
